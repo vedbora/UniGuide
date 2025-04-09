@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UniGuide Dashboard</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      backdrop-filter: blur(5px);
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px 0;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "•";
+      color: #00f2fe;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 14px 28px;
+      font-size: 16px;
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🎯 UniGuide Dashboard
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>📄 Resume Analysis Summary</h2>
+      <p><strong>Strengths:</strong> Python, Java, Communication</p>
+      <p><strong>Missing Skills:</strong> DSA, Git, Projects, Web Dev</p>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Personalized Learning Roadmap</h2>
+      <ul>
+        <li>1️⃣ Learn Data Structures & Algorithms (DSA)</li>
+        <li>2️⃣ Build 2 projects using Git + GitHub</li>
+        <li>3️⃣ Learn Web Development (HTML, CSS, JS)</li>
+        <li>4️⃣ Create a portfolio and LinkedIn profile</li>
+        <li>5️⃣ Apply to 5 internships weekly</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Next Steps</h2>
+      <ul>
+        <li>✅ Complete first project</li>
+        <li>✅ Update resume with GitHub links</li>
+        <li>🔜 Schedule a mock interview</li>
+      </ul>
+    </div>
+
+    <button class="btn" onclick="alert('Coming soon: Mentor matching, certifications & job feed!')">
+      ✨ Explore More
+    </button>
+  </div>
+</body>
+</html>
